@@ -19,7 +19,7 @@ def get_file_path(_instance, filename):
 
 class Project(Base):
     name_project = models.CharField('Name Project', max_length=100)
-    description = models.TextField('Description', blank=False   )
+    description = models.TextField('Description', blank=False)
     coordinate = models.DecimalField('Coordinates', max_digits=5, decimal_places=5)
     latitude = models.DecimalField('Latitude', max_digits=9, decimal_places=6)
     longitude = models.DecimalField('Longitude', max_digits=9, decimal_places=6)
