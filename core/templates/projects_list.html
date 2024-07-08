@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Projetos</title>
+</head>
+<body>
+    <h1>Lista de Projetos</h1>
+    <ul>
+        {% for project in projects %}
+        <li>
+            <a href="{% url 'project' slug=project.slug %}">{{ project.name_project }}</a>
+            <!-- Mostrar outros detalhes resumidos do projeto, se necessário -->
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
