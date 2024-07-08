@@ -24,7 +24,7 @@
                     <a class="nav-link" href="{% url 'index'%}">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="service.html"> Our Projects </a>
+                    <a class="nav-link" href="{% url 'projectlist' %}"> Our Projects </a>
                   </li>
                   <li class="nav-item active">
                     <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
@@ -86,10 +86,7 @@
         <a href="https://html.design/">Free Html Templates</a>
       </p>
     </section>
-    <!-- footer section -->
   
-    <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
   
   </body>
   

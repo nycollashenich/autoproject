@@ -1,12 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Detalhes do Projeto</title>
+<title>Detalhes do Projeto</title>
 </head>
 <body>
     <h1>Detalhes do Projeto</h1>
-    <p>Nome: {{ project.name }}</p>
-    <p>Descrição: {{ project.description }}</p>
+    <p>Name Project: {{ project.name_project }}</p>
+    <p>Description: {{ project.description }}</p>
+    <p>Coordinates: {{ project.coordinate }}</p>
+    <p>Latitude: {{ project.latitude }}</p>
+    <p>Longitude: {{ project.longitude }}</p>
+    <p>Altitudealti: {{ project.altitudealti }}</p>
+    <p>Point X: {{ project.point_x }}</p>
+    <p>Point Y: {{ project.point_y }}</p>
+    <p>Point Z: {{ project.point_z }}</p>
+    <p>Altitudes and elevation: {{ project.altitudes_elavation }}</p>
+    <p>Accountable: {{ project.accountable }}</p>
+    <p><img src="{{ project.image.thumb.url }}" alt=""></p>
+    <p>Status: {{ project.status }}</p>
+    <p>Local: {{ project.local }}</p>
+    
     <!-- outros detalhes do projeto -->
 </body>
 </html>

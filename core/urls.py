@@ -7,7 +7,6 @@ urlpatterns = [
     path('contato/', ContactView.as_view(), name='contact'),
     path('project/<slug:slug>', ProjectDetailView.as_view(), name='project'),
     path('projectlist/', ProjectListView.as_view(), name='projectlist')
-
 ]
 
 handler404 = View404.as_view()
