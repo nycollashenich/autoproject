@@ -3,8 +3,8 @@ from .views import IndexView, ContactView, View404, View500, ProjectDetailView, 
 from django.conf.urls import handler404, handler500
 
 urlpatterns = [
-    path('', IndexView.as_view(), name='index'), #htopprojetos
-    path('contato/', ContactView.as_view(), name='contact'),
+    path('autotopography', IndexView.as_view(), name='index'), #htopprojetos
+    path('contacto/', ContactView.as_view(), name='contact'),
     path('project/<slug:slug>', ProjectDetailView.as_view(), name='project'),
     path('projectlist/', ProjectListView.as_view(), name='projectlist')
 ]

@@ -1,5 +1,153 @@
+{% include "base.html" %}
 {% load static %}
-<!DOCTYPE html>
+
+<body class="sub_page">
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+            <a class="navbar-brand mr-5">
+              <span>
+                Auto Topography
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'projectlist' %}"> Our projects </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+  
+    <!-- about section -->
+  
+    <section class="about_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                  {{ project.name_project }}
+                </h2>
+              </div>
+              <p>
+                {{ project.description }}
+              </p>
+              <p>
+                Coordinates: {{ project.coordinate }}
+              </p>
+              <p>
+                Latitude: {{ project.latitude }}
+              </p>
+              <p>
+                Longitude: {{ project.longitude }}
+              </p>
+              <p>
+                Point X: {{ project.point_x }}
+              </p>
+              <p>
+                Point Y: {{ project.point_y }}
+              </p>
+              <p>
+                Point Z: {{ project.point_z }}
+              </p>
+              <p>
+                Altitude and Elevation: {{ project.altitudes_elavation }}
+              </p>
+              <p>
+                Local: {{ project.local }}
+              </p>
+              <p>
+                Accountable: {{ project.accountable }}
+              </p>
+              <a>
+                Status: {{ project.status }}
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="{{ project.image.thumb.url }}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+      <p>
+        Copyright &copy; 2019 All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </section>
+  
+  
+  </body>
+  
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} <!DOCTYPE html>
 <html>
 <head>
 <title>Detalhes do Projeto</title>
@@ -23,4 +171,4 @@
     
     <!-- outros detalhes do projeto -->
 </body>
-</html>
+</html> {% endcomment %}

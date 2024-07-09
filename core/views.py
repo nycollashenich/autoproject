@@ -16,11 +16,11 @@ class ContactView(FormView):
 
     def form_valid(self, form, *args, **kwargs):
         form.send_mail()
-        messages.success(self.request, 'E-mail enviado com sucesso')
+        messages.success(self.request, 'Success')
         return super(ContactView, self).form_valid(form, *args, **kwargs)
     
     def form_invalid(self, form, *args, **kwargs):
-        messages.error(self.request, 'Erro ao enviar mensagem')
+        messages.error(self.request, 'Error')
         return super(ContactView, self).form_invalid(form, *args, **kwargs)
     
     
