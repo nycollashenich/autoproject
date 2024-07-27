@@ -16,8 +16,8 @@ class ContactForm(forms.Form):
         mail = EmailMessage(
             subject=message,
             body=content,
-            from_email='contact@auto.com.br',
-            to=['contact@auto.com.br'],
+            from_email='portifoliohenichteste@gmail.com',
+            to=['supertetomen@gmail.com'],
             headers={'Replay-To': email},
         )
         mail.send()
